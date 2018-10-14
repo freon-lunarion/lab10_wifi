@@ -22,7 +22,7 @@ public class Task2Activity extends AppCompatActivity {
 
         WifiInfo connectionInfo = mWifiManager.getConnectionInfo();
         if (connectionInfo != null) {
-            textView.setText( "Frequency: "+(connectionInfo.getFrequency()/1000) +"GHz\nBitRate: " + connectionInfo.getLinkSpeed()+"Mbps" );
+            textView.setText( "Frequency: "+(connectionInfo.getFrequency()/1000f) +"GHz\nBitRate: " + connectionInfo.getLinkSpeed()+"Mbps" );
         }
     }
 }
